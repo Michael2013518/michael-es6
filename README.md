@@ -29,3 +29,22 @@
 5) 设置对象的prototype Object.setPrototypeOf()  
 6) --proto-  
 7) super
+
+## 6. 生成器与迭代器  
+1) 迭代器 Iterators  
+2) 生成器 Generators  
+
+## 7. 类  
+1) Classes 类  
+2) get与set  
+3) 静态方法 static  [不需要实例化]
+4) 继承 extends
+
+## 8. 集合  
+1) Set [get,has,delete,clear]
+2) Map [set,get,has,delete,clear]
+
+## 9. 模块  
+1) Modules 模块  
+2) 重命名导出与导入的东西 export | import { dessert, fruit, supper as dinner} from './files'  
+3) 导出与导入默认 export default, import chef from './files'
