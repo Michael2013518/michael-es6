@@ -26,3 +26,33 @@ function kitchen (string,...value){
 console.log(string);
 console.log(value);
 }
+
+// 迭代器 生成器
+
+function chef(foods){
+  let i = 0;
+  return {
+    next(){
+      let done = (i>=foods.length);
+      let value = !done ? foods[i++] : undefined;
+      return {
+        value: value,
+        done: done
+      }
+    }
+  }
+}
+let ninghao  = chef(['西红柿','炒鸡蛋']);
+console.log(ninghao.next());
+console.log(ninghao.next());
+console.log(ninghao.next());
+
+// function* chef2(foods) {
+//   for (var i = 0; i < foods.length; i++) {
+//     yield foods[i];
+//   }
+// }
+// let foodList = chef2(['西红柿','炒鸡蛋']);
+// console.log(foodList.next());
+// console.log(foodList.next());
+// console.log(foodList.next());
